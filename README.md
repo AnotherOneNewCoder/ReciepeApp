@@ -1,21 +1,39 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+# Recipe App KMP Compose Multiplatform
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
-
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+This app is built using Kotlin Multiplatform using Jetpack Compose based UI Framework Compose Multiplatform for sharing the UI between Android, iOS, Web and Desktop all platforms.
+It demonstrates the use of Koin for Dependency Injection, Ktor for Networking, SQLDelight for Persistence and Compose Navigation for navigation and Compose ViewModel for business logic in Kotlin Multiplatform for Android, iOS, Web and Desktop platforms.
+It features minimal features of Recipe App such as List of Recipes, Recipe Detail, Search Recipes, Favorite Recipes, Login and Profile Screens etc..
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## Libraries used
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+* [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
+* [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+* [Koin](https://github.com/InsertKoinIO/koin)
+* [SQLDelight](https://github.com/cashapp/sqldelight)
+* [Coil](https://coil-kt.github.io/coil/)
+* [KTOR Client](https://ktor.io/docs/client-create-new-application.html)
+* [Multiplatform Settings](https://github.com/russhwolf/multiplatform-settings)
+* [Compose Navigation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-navigation-routing.html)
+
+## Screenshots
+
+#### Mobile
+| | | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot1_home.jpg">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot2_search.jpg">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot3_detail.jpg">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot4_login.jpg">|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot5_profile.jpg">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot6_profile.jpg">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot7_fav.jpg">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot8_popup.jpg">
+
+#### Desktop/Web
+| | |
+|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/AnotherOneNewCoder/ReciepeApp/blob/initial/screenshots/screenshot1_desktop_home.jpg">  |
+
+## Pre-requisites
+
+* Kotlin
+* Java JDK 17+
+* Latest stable version of Android Studio IDE
+* Latest XCode (for iOS)
+* Kotlin Multiplatform Plugin in Android Studio
